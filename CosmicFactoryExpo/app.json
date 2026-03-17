@@ -1,0 +1,122 @@
+{
+  "expo": {
+    "name": "Cosmic Factory",
+    "slug": "cosmic-factory",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0a0a1a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yusufuyar.cosmicfactory",
+      "buildNumber": "2",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a1a"
+      },
+      "package": "com.yusufuyar.cosmicfactory",
+      "versionCode": 2
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-9379572221128283~3969350655",
+          "iosAppId": "ca-app-pub-9379572221128283~4899288945",
+          "userTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you.",
+          "skAdNetworkItems": [
+            "cstr6suwn9.skadnetwork",
+            "4fzdc2evr5.skadnetwork",
+            "4pfyvq9l8r.skadnetwork",
+            "2fnua5tdw4.skadnetwork",
+            "ydx93a7ass.skadnetwork",
+            "5a6flpkh64.skadnetwork",
+            "p78axxw29g.skadnetwork",
+            "v72qych5uu.skadnetwork",
+            "ludvb6z3bs.skadnetwork",
+            "cp8zw746q7.skadnetwork",
+            "c6k4g5qg8m.skadnetwork",
+            "s39g8k73mm.skadnetwork",
+            "3qy4746246.skadnetwork",
+            "3sh42y64q3.skadnetwork",
+            "f38h382jlk.skadnetwork",
+            "hs6bdukanm.skadnetwork",
+            "prcb7njmu6.skadnetwork",
+            "v9wttpbfk9.skadnetwork",
+            "n38lu8286q.skadnetwork",
+            "cg4yq2srnc.skadnetwork",
+            "e5fvkxwrpn.skadnetwork",
+            "8s468mfl3y.skadnetwork",
+            "238telebn7.skadnetwork",
+            "22mmun2rn5.skadnetwork",
+            "klf5c3l5u5.skadnetwork",
+            "ppxm28t8ap.skadnetwork",
+            "ecpz2srf59.skadnetwork",
+            "ajdyxs2n65.skadnetwork",
+            "5l3tpt7t6e.skadnetwork",
+            "mls7yz5dvl.skadnetwork",
+            "wzmmz9fp6w.skadnetwork",
+            "su67r6k2v3.skadnetwork",
+            "yclnxrl5pm.skadnetwork",
+            "7ug5zh24hu.skadnetwork",
+            "gta9lk7p23.skadnetwork",
+            "vutu7akeur.skadnetwork",
+            "y5ghdn5j9k.skadnetwork",
+            "n6fk4nfna4.skadnetwork",
+            "v4nxqhlyqp.skadnetwork",
+            "t38b2kh725.skadnetwork",
+            "f73kdq92p3.skadnetwork",
+            "wg4vff78zm.skadnetwork",
+            "gvmwg8q7h5.skadnetwork",
+            "zmvfpc5aq8.skadnetwork",
+            "w9q455wk68.skadnetwork",
+            "47vhws6wlr.skadnetwork",
+            "kbd757ywx3.skadnetwork",
+            "9t245vhmpl.skadnetwork",
+            "a2p9lx4jpn.skadnetwork",
+            "5tjdwbrq8w.skadnetwork",
+            "m8dbw4sv7c.skadnetwork",
+            "7rz58n8ntl.skadnetwork",
+            "ejvt5qm6ak.skadnetwork",
+            "mtkv5xtk9e.skadnetwork",
+            "6g9af3uyq4.skadnetwork",
+            "uw77j35x4d.skadnetwork",
+            "u679fj5vs4.skadnetwork",
+            "rx5hdcabgc.skadnetwork",
+            "g28c52eehv.skadnetwork",
+            "cad8qz2s3j.skadnetwork",
+            "9rd848q77k.skadnetwork",
+            "n9x2a789qt.skadnetwork",
+            "pwa73g5rt2.skadnetwork",
+            "mp6xlyr22a.skadnetwork",
+            "x44k69ngh6.skadnetwork",
+            "ggvn48r87g.skadnetwork",
+            "3rd42ekr43.skadnetwork",
+            "3qcr597p9d.skadnetwork"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cf56376d-4750-4bf0-aa2e-b534b8e59c73"
+      }
+    },
+    "owner": "yusuf435"
+  }
+}

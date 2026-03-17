@@ -1,0 +1,25 @@
+# Node
+CosmicFactoryExpo/node_modules/
+CosmicFactoryExpo/.expo/
+CosmicFactoryExpo/dist/
+
+# Build
+*.apk
+*.aab
+*.ipa
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/

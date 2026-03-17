@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#1a1650"/>
+      <stop offset="50%" stop-color="#0c0825"/>
+      <stop offset="100%" stop-color="#030108"/>
+    </radialGradient>
+
+    <linearGradient id="rocketBody" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0%" stop-color="#ede9ff"/>
+      <stop offset="18%" stop-color="#d4c5fd"/>
+      <stop offset="48%" stop-color="#9b7af6"/>
+      <stop offset="78%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+
+    <linearGradient id="rocketHL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5f3ff" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#e0d5ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="windowGrad" cx="36%" cy="30%">
+      <stop offset="0%" stop-color="#a5d8ff"/>
+      <stop offset="35%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+
+    <linearGradient id="flameOuter" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="30%" stop-color="#f97316"/>
+      <stop offset="65%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="flameInner" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="40%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="flameCore" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fef9c3"/>
+    </linearGradient>
+
+    <linearGradient id="finL" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+    <linearGradient id="finR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+
+    <linearGradient id="nozzleGrad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+
+    <filter id="starGlow"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="flameGlow"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="rocketShadow">
+      <feDropShadow dx="10" dy="14" stdDeviation="25" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+
+    <radialGradient id="planetGrad" cx="36%" cy="30%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="55%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Full square background (OS handles rounding) -->
+  <rect x="0" y="0" width="1024" height="1024" fill="#050210"/>
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#bgGrad)"/>
+
+  <!-- Stars -->
+  <circle cx="120" cy="130" r="4" fill="#fff" opacity="0.9" filter="url(#starGlow)"/>
+  <circle cx="910" cy="110" r="3.5" fill="#c4b5fd" opacity="0.85" filter="url(#starGlow)"/>
+  <circle cx="65" cy="580" r="3" fill="#93c5fd" opacity="0.8" filter="url(#starGlow)"/>
+  <circle cx="950" cy="660" r="3.5" fill="#fff" opacity="0.75" filter="url(#starGlow)"/>
+  <circle cx="850" cy="400" r="2.8" fill="#fde047" opacity="0.7" filter="url(#starGlow)"/>
+  <circle cx="220" cy="80" r="2.5" fill="#e0e7ff" opacity="0.7"/>
+  <circle cx="780" cy="65" r="2.2" fill="#fff" opacity="0.65"/>
+  <circle cx="975" cy="330" r="2.5" fill="#c4b5fd" opacity="0.6"/>
+  <circle cx="50" cy="370" r="2" fill="#93c5fd" opacity="0.55"/>
+  <circle cx="160" cy="880" r="2.2" fill="#fff" opacity="0.5"/>
+  <circle cx="500" cy="960" r="2" fill="#e0e7ff" opacity="0.5"/>
+  <circle cx="370" cy="50" r="2" fill="#fde047" opacity="0.5"/>
+  <circle cx="900" cy="520" r="1.8" fill="#fff" opacity="0.5"/>
+  <circle cx="140" cy="280" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="960" cy="200" r="1.5" fill="#c4b5fd" opacity="0.4"/>
+  <circle cx="55" cy="750" r="1.5" fill="#93c5fd" opacity="0.35"/>
+  <circle cx="820" cy="880" r="1.3" fill="#fff" opacity="0.35"/>
+  <circle cx="300" cy="950" r="1.2" fill="#e0e7ff" opacity="0.3"/>
+  <circle cx="660" cy="55" r="1.3" fill="#93c5fd" opacity="0.35"/>
+  <circle cx="970" cy="830" r="1.2" fill="#fff" opacity="0.3"/>
+
+  <!-- Planet (top-right) -->
+  <circle cx="860" cy="195" r="35" fill="url(#planetGrad)" opacity="0.5"/>
+  <ellipse cx="860" cy="195" rx="50" ry="9" fill="none" stroke="#a78bfa" stroke-width="2.5" opacity="0.22" transform="rotate(-18 860 195)"/>
+
+  <!-- Small planet (bottom-left) -->
+  <circle cx="120" cy="780" r="20" fill="url(#planetGrad)" opacity="0.35"/>
+
+  <!-- ========== ROCKET ========== -->
+  <g filter="url(#rocketShadow)" transform="translate(45 -10) translate(512 500) rotate(-15) translate(-512 -500)">
+
+    <!-- Flame glow -->
+    <ellipse cx="512" cy="800" rx="120" ry="200" fill="#f97316" opacity="0.12" filter="url(#flameGlow)"/>
+
+    <!-- Flame outer -->
+    <path d="M448 720 C452 785, 425 870, 385 975 C435 910, 480 925, 512 990 C544 925, 589 910, 639 975 C599 870, 572 785, 576 720 Z" fill="url(#flameOuter)" opacity="0.92"/>
+
+    <!-- Flame middle -->
+    <path d="M462 720 C465 775, 445 850, 420 935 C455 885, 488 898, 512 950 C536 898, 569 885, 604 935 C579 850, 559 775, 562 720 Z" fill="url(#flameInner)" opacity="0.9"/>
+
+    <!-- Flame core -->
+    <path d="M480 720 C482 760, 474 820, 462 880 C484 850, 500 860, 512 900 C524 860, 540 850, 562 880 C550 820, 542 760, 544 720 Z" fill="url(#flameCore)" opacity="0.85"/>
+
+    <!-- Rocket body -->
+    <path d="M512 48 C465 170, 428 330, 418 480 C415 545, 418 630, 425 690 L434 730 L590 730 L599 690 C606 630, 609 545, 606 480 C596 330, 559 170, 512 48 Z" fill="url(#rocketBody)"/>
+
+    <!-- Body left highlight -->
+    <path d="M512 58 C475 170, 442 320, 433 460 C430 525, 433 610, 438 675 L443 720 L500 720 L500 68 Z" fill="url(#rocketHL)" opacity="0.5"/>
+
+    <!-- Nose specular -->
+    <ellipse cx="494" cy="130" rx="16" ry="65" fill="#f5f3ff" opacity="0.16" transform="rotate(-3 494 130)"/>
+
+    <!-- Metal band upper -->
+    <rect x="432" y="320" width="160" height="16" rx="5" fill="#5b21b6" opacity="0.55"/>
+    <rect x="432" y="320" width="160" height="5" rx="2" fill="#d4c5fd" opacity="0.2"/>
+
+    <!-- Metal band lower -->
+    <rect x="424" y="655" width="176" height="18" rx="5" fill="#5b21b6" opacity="0.55"/>
+    <rect x="424" y="655" width="176" height="5" rx="2" fill="#d4c5fd" opacity="0.2"/>
+
+    <!-- Main window -->
+    <circle cx="512" cy="455" r="75" fill="#0f172a" stroke="#7c3aed" stroke-width="8"/>
+    <circle cx="512" cy="455" r="63" fill="url(#windowGrad)"/>
+    <ellipse cx="490" cy="436" rx="26" ry="18" fill="#bfdbfe" opacity="0.35" transform="rotate(-16 490 436)"/>
+    <circle cx="540" cy="472" r="9" fill="#93c5fd" opacity="0.2"/>
+    <circle cx="512" cy="455" r="69" fill="none" stroke="#c4b5fd" stroke-width="2" opacity="0.22"/>
+
+    <!-- Secondary window -->
+    <circle cx="512" cy="270" r="26" fill="#0f172a" stroke="#7c3aed" stroke-width="5"/>
+    <circle cx="512" cy="270" r="19" fill="#3b82f6" opacity="0.75"/>
+    <ellipse cx="505" cy="263" rx="8" ry="6" fill="#93c5fd" opacity="0.4"/>
+
+    <!-- Left fin -->
+    <path d="M425 625 L340 758 L356 778 L438 725 Z" fill="url(#finL)"/>
+    <path d="M425 628 L362 748 L390 735 L430 670 Z" fill="#a78bfa" opacity="0.15"/>
+    <path d="M425 628 L344 760" fill="none" stroke="#c4b5fd" stroke-width="2.5" opacity="0.2"/>
+
+    <!-- Right fin -->
+    <path d="M599 625 L684 758 L668 778 L586 725 Z" fill="url(#finR)"/>
+    <path d="M599 628 L662 748 L634 735 L594 670 Z" fill="#a78bfa" opacity="0.1"/>
+    <path d="M599 628 L680 760" fill="none" stroke="#c4b5fd" stroke-width="2.5" opacity="0.2"/>
+
+    <!-- Center fin -->
+    <path d="M492 710 L512 798 L532 710 Z" fill="#3b0764" opacity="0.7"/>
+    <path d="M500 710 L512 785 L512 710 Z" fill="#6d28d9" opacity="0.2"/>
+
+    <!-- Engine nozzle -->
+    <path d="M452 722 L434 748 L590 748 L572 722 Z" fill="url(#nozzleGrad)"/>
+    <path d="M452 722 L434 748 L512 748 L512 722 Z" fill="#7c3aed" opacity="0.2"/>
+    <rect x="445" y="718" width="134" height="6" rx="3" fill="#8b5cf6" opacity="0.3"/>
+
+    <!-- Rivet details -->
+    <circle cx="458" cy="540" r="4" fill="#5b21b6" opacity="0.3"/>
+    <circle cx="566" cy="540" r="4" fill="#5b21b6" opacity="0.3"/>
+    <circle cx="458" cy="585" r="4" fill="#5b21b6" opacity="0.3"/>
+    <circle cx="566" cy="585" r="4" fill="#5b21b6" opacity="0.3"/>
+
+    <!-- Antenna -->
+    <line x1="512" y1="48" x2="512" y2="12" stroke="#c4b5fd" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="512" cy="6" r="6" fill="#a78bfa" opacity="0.8"/>
+    <circle cx="512" cy="6" r="3.5" fill="#e0d5ff"/>
+
+  </g>
+
+  <!-- Sparkle particles -->
+  <circle cx="300" cy="620" r="5.5" fill="#fde047" opacity="0.65" filter="url(#starGlow)"/>
+  <circle cx="240" cy="740" r="4" fill="#fbbf24" opacity="0.5" filter="url(#starGlow)"/>
+  <circle cx="340" cy="820" r="3.5" fill="#fef08a" opacity="0.4"/>
+  <circle cx="730" cy="580" r="5" fill="#fde047" opacity="0.6" filter="url(#starGlow)"/>
+  <circle cx="775" cy="710" r="3.5" fill="#fbbf24" opacity="0.45"/>
+  <circle cx="690" cy="800" r="3" fill="#fef08a" opacity="0.35"/>
+  <circle cx="265" cy="490" r="3" fill="#c4b5fd" opacity="0.4"/>
+  <circle cx="755" cy="470" r="3.2" fill="#93c5fd" opacity="0.35"/>
+
+  <!-- 4-pointed sparkles -->
+  <g transform="translate(195 360)" opacity="0.75">
+    <path d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z" fill="#fde047" filter="url(#starGlow)"/>
+  </g>
+  <g transform="translate(840 600)" opacity="0.55">
+    <path d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z" fill="#c4b5fd" filter="url(#starGlow)"/>
+  </g>
+  <g transform="translate(130 520)" opacity="0.45">
+    <path d="M0 -7 L1.8 -1.8 L7 0 L1.8 1.8 L0 7 L-1.8 1.8 L-7 0 L-1.8 -1.8 Z" fill="#93c5fd"/>
+  </g>
+  <g transform="translate(900 340)" opacity="0.4">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#fde047"/>
+  </g>
+</svg>
